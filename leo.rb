@@ -7,7 +7,7 @@ class Leo < Formula
   depends_on "java"
 
   def install
-    bin.install "bin/*"
-    lib.install "lib/*"
+    bin.install Dir["bin/*"]
+    lib.install Dir["lib/*"]
   end
 end
