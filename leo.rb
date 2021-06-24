@@ -9,5 +9,6 @@ class Leo < Formula
   def install
     bin.install "bin/leo" => "leo"
     prefix.install Dir["lib"]
+    system "chmod", "+x", "#{bin}/leo"
   end
 end
