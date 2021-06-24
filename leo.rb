@@ -8,6 +8,6 @@ class Leo < Formula
 
   def install
     bin.install Dir["bin/*"]
-    lib.install Dir["lib/*"]
+    prefix.install Dir["lib/*"]
   end
 end
