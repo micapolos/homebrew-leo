@@ -7,7 +7,7 @@ class Leo < Formula
   depends_on "java"
 
   def install
-    bin.install "bin/leo"
+    bin.install "bin/leo" => "leo"
     prefix.install Dir["lib"]
   end
 end
