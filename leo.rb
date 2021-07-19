@@ -1,8 +1,8 @@
 class Leo < Formula
   desc "Leo programming language"
   homepage "https://github.com/micapolos/leo-script"
-  url "https://github.com/micapolos/leo-script/releases/download/v0.25.18/leo.zip"
-  sha256 "a3fa87efaa26c01775fd7f8c61e9c6c58aa224ab87267661da4858702393b696"
+  url "https://github.com/micapolos/leo-script/releases/download/v0.25.19/leo.zip"
+  sha256 "a6f9b70ed367c98915b7b3bedcf53d595e9c8a8cd75d754f9936b9113fbb6289"
 
   depends_on "openjdk"
 
