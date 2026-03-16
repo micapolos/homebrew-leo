@@ -5,8 +5,7 @@ class Leo < Formula
   sha256 "24099eb24511adada0b5c69b5c9e3a49b19d7f078e9c9b619dfc554c38ad63f1"
 
   def install
-    bin.install "bin/leo" => "leo"
-    prefix.install "lib"
-    prefix.install "examples"
+    prefix.install "bin", "lib", "examples"
+    bin.install_symlink prefix/"bin/leo"
   end
 end
