@@ -6,5 +6,7 @@ class Leo < Formula
 
   def install
     bin.install "bin/leo" => "leo"
+    prefix.install "lib"
+    prefix.install "examples"
   end
 end
