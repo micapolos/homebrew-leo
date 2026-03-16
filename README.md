@@ -3,6 +3,5 @@
 ### Usage
 
 ```
-brew tap micapolos/leo
-brew install leo
+brew install micapolos/leo/leo
 ```
