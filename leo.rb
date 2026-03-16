@@ -6,7 +6,7 @@ class Leo < Formula
 
   def install
     bin.install "bin/leo"
-    libexec.install "lib", "examples"
+    prefix.install "lib", "examples"
   end
 
   test do
