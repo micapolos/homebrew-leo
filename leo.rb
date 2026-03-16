@@ -1,5 +1,5 @@
 class Leo < Formula
-  desc "Leo programming language"
+  desc "Programming language"
   homepage "https://github.com/micapolos/micascheme"
   url "https://github.com/micapolos/micascheme/releases/download/v0.1.3/leo-tarm64osx-v0.1.3.tar.gz"
   sha256 "24099eb24511adada0b5c69b5c9e3a49b19d7f078e9c9b619dfc554c38ad63f1"
@@ -7,5 +7,13 @@ class Leo < Formula
   def install
     prefix.install "bin", "lib", "examples"
     bin.install_symlink prefix/"bin/leo"
+  end
+
+  test do
+    assert_path_exists prefix/"bin"
+    assert_path_exists prefix/"lib"
+    assert_path_exists prefix/"examples"
+
+    system "#{bin}/leo"
   end
 end
