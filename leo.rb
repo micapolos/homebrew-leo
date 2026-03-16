@@ -7,6 +7,11 @@ class Leo < Formula
   def install
     libexec.install "bin", "lib", "examples"
     (bin/"leo").write_exec_script (libexec/"bin/leo")
+    bin.install_symlink libexec/"bin/leo" => "leo"
+  end
+
+  def post_install
+    chmod 0755, bin/"leo"
   end
 
   test do
