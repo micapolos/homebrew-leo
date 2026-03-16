@@ -4,11 +4,10 @@ class Leo < Formula
   url "https://github.com/micapolos/micascheme/releases/download/v0.1.3/leo-tarm64osx-v0.1.3.tar.gz"
   sha256 "24099eb24511adada0b5c69b5c9e3a49b19d7f078e9c9b619dfc554c38ad63f1"
 
-  keg_only "so that internal libraries don't clutter the global path"
-
   def install
-    prefix.install "bin", "lib", "examples"
-    bin.install_symlink prefix/"bin/leo"
+    bin.install "bin/leo"
+    libexec.install "lib", "examples"
+    inreplace bin/"leo", 'BASE_DIR="$LEO_DIR/.."', "BASE_DIR=\"#{libexec}\""
   end
 
   test do
