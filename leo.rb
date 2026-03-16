@@ -7,7 +7,6 @@ class Leo < Formula
   def install
     libexec.install "bin", "lib", "examples"
     (bin/"leo").write_exec_script (libexec/"bin/leo")
-    bin.install_symlink_bin bin/"leo" if (bin/"leo").exist?
   end
 
   test do
