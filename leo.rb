@@ -7,7 +7,7 @@ class Leo < Formula
   def install
     libexec.install "bin", "lib"
     pkgshare.install "examples"
-    man.install Dir["man/*"]
+    man1.install "man/leo.1"
     bin.write_exec_script (libexec/"bin/leo")
   end
 
