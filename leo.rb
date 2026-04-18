@@ -1,8 +1,8 @@
 class Leo < Formula
   desc "Programming language"
   homepage "https://github.com/micapolos/micascheme/tree/main/leo"
-  url "https://github.com/micapolos/micascheme/releases/download/v0.1.114/leo-tarm64osx-v0.1.114.tar.gz"
-  sha256 "6edebab48fcd5aa4ed785e9b63b07043450f17a977fbd1842bfcd6ad90e4d177"
+  url "https://github.com/micapolos/micascheme/releases/download/v0.1.115/leo-tarm64osx-v0.1.115.tar.gz"
+  sha256 "1ad7950d46455c13549b27568085953c27ef66d2d1403013cf7186743165749c"
 
   def install
     libexec.install "bin", "lib"
